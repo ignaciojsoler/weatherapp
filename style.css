@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(44,66,191,1) 0%, rgba(42,79,191,1) 25%, rgba(27,101,166,1) 50%, rgba(33,101,191,1) 75%, rgba(21,143,191,1) 100%);
+	min-height: 100vh;
+    color: #fff;
+}
+
+::placeholder {
+    color: rgb(71, 71, 71);
+}
+
+
+/*Intro screen*/
+.intro-screen-box {
+    display: flex;
+    flex-flow: column;
+}
+
+.searcher {
+    flex: 0 1 auto;
+}
+
+.searcher__form-control {
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 0.6em;
+}
+
+.welcome-title {
+    flex: 1 1 auto;
+}
+
+.searcher__btn, .searcher__btn-back {
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(10px);
+}
+
+.searcher__btn:hover, .searcher__btn-back:hover {
+    background-color: rgba(255, 255, 255, 0.521);
+}
+/*-------------*/
+
+/*----Todays weather----*/
+.weather-by-hour__col {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.next-5-days__row-bg {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.next-5-days-mobile__col {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/*----------------------*/
+
+  
+/*---Media queries---*/
+
+/*---Ipad---*/
+@media screen and (min-width: 768px) {
+    .next-5-days__img {
+        height: 50px;
+    }
+    .current-temperature {
+        border-right: 1px solid #fff;
+    }
+    .current-stats__container {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+}
+
+/*---Desktop---*/
+@media screen and (min-width: 1024px) {
+    .next-5-days__img {
+        height: 90px;
+    }
+}
+/*------*/
