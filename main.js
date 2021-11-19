@@ -93,7 +93,7 @@ const displayNext5DaysWeather = async (weather) => {
         const next5DaysMobileDay = showMeTheDays(today.getDay() + (i)).substr(0, 3);
         $next5DaysMobileDay.innerHTML = next5DaysMobileDay;
         const next5DaysMobileIcon = weather.list[i * 7].weather[0].icon;
-        $next5DaysMobileIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${next5DaysMobileIcon}@2x.png" alt="" srcset="" class="img-fluid my-2">`;
+        $next5DaysMobileIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${next5DaysMobileIcon}@2x.png" alt="" srcset="" class="img-fluid my-2">`;
         const next5DaysMobileTemperature = parseInt(weather.list[i * 7].main.temp) + '°';
         $next5DaysMobileTemperature.innerHTML = next5DaysMobileTemperature;
 
@@ -129,7 +129,7 @@ const displayNext5DaysWeather = async (weather) => {
         const next5DaysDesktopDate = showMeTheDays(today.getDay() + (i));
         $next5DaysDesktopDate.innerHTML = next5DaysDesktopDate;
         const next5DaysDesktopIcon = weather.list[i * 7].weather[0].icon;
-        $next5DaysDesktopIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${next5DaysDesktopIcon}@2x.png" alt="" srcset="" class="img-fluid">`;
+        $next5DaysDesktopIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${next5DaysDesktopIcon}@2x.png" alt="" srcset="" class="img-fluid">`;
         const next5DaysDesktopMin = parseInt(weather.list[i * 7].main.temp_min);
         $next5DaysDesktopMin.innerHTML ="Min: " + next5DaysDesktopMin + "°";
         const next5DaysDesktopMax = parseInt(weather.list[i * 7].main.temp_max);
@@ -182,7 +182,7 @@ function displayTodaysWeatherByHour(weather) {
         const weatherByHourTime = weatherByHourTimeCalc();
         $weatherByHourTime.innerHTML = weatherByHourTime;
         const weatherByHourIcon = weather.list[i].weather[0].icon;
-        $weatherByHourIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${weatherByHourIcon}@2x.png" alt="" srcset="" class="weather-by-hour__img img-fluid">`;
+        $weatherByHourIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${weatherByHourIcon}@2x.png" alt="" srcset="" class="weather-by-hour__img img-fluid">`;
         const weatherByHourTemperature = parseInt(weather.list[i].main.temp);
         $weatherByHourTemperature.innerHTML = weatherByHourTemperature + "°";
 
