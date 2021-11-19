@@ -131,13 +131,13 @@ const displayNext5DaysWeather = async (weather) => {
         const next5DaysDesktopIcon = weather.list[i * 7].weather[0].icon;
         $next5DaysDesktopIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${next5DaysDesktopIcon}@2x.png" alt="" srcset="" class="img-fluid">`;
         const next5DaysDesktopMin = parseInt(weather.list[i * 7].main.temp_min);
-        $next5DaysDesktopMin.innerHTML = next5DaysDesktopMin + "°";
+        $next5DaysDesktopMin.innerHTML ="Min: " + next5DaysDesktopMin + "°";
         const next5DaysDesktopMax = parseInt(weather.list[i * 7].main.temp_max);
-        $next5DaysDesktopMax.innerHTML = next5DaysDesktopMax + "°";
+        $next5DaysDesktopMax.innerHTML ="Max: " + next5DaysDesktopMax + "°";
         const next5DaysDesktopWind = weather.list[i * 7].wind.speed;
-        $next5DaysDesktopWind.innerHTML = next5DaysDesktopWind + " mph";
+        $next5DaysDesktopWind.innerHTML ="Wind: " + next5DaysDesktopWind + " mph";
         const next5DaysDesktopHumidity = weather.list[i * 7].main.humidity;
-        $next5DaysDesktopHumidity.innerHTML = next5DaysDesktopHumidity + "%";
+        $next5DaysDesktopHumidity.innerHTML ="Humidity: " + next5DaysDesktopHumidity + "%";
 
         const next5DaysArray = [$next5DaysDesktopDate, $next5DaysDesktopIcon, $next5DaysDesktopMin, $next5DaysDesktopMax, $next5DaysDesktopWind, $next5DaysDesktopHumidity]
 
