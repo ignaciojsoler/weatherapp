@@ -53,7 +53,7 @@ function displayTodaysWeather(weather) {
     $todaysDate.innerHTML = date;
     $currentTemperatureValue.innerHTML = `${currentTemperatureValue}°`;
     $currentTemperatureDescription.innerHTML = currentTemperatureDescription;
-    $currentTemperatureIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${currentTemperatureIcon}@2x.png" alt="" class="current-temperature__img img-fluid">`
+    $currentTemperatureIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${currentTemperatureIcon}@2x.png" alt="" class="current-temperature__img img-fluid">`
     $currentStatsMax.innerHTML = `${currentStatsMax}°`;
     $currentStatsFeelsLike.innerHTML = `${currentStatsFeelsLike}°`;
     $currentStatsHumidity.innerHTML = `${currentStatsHumidity}%`;
