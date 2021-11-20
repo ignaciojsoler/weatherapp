@@ -19,13 +19,10 @@
     <div class="intro-screen-box vh-100">
 
         <!--Search navbar-->
-        <nav class="searcher navbar container">
-            <div class="searcher__container d-flex px-2 py-3">
+        <nav class="searcher navbar">
+            <div class="searcher__container d-flex justify-content-end px-2 py-3">
                 <input class="searcher__form-control" type="search" placeholder="Enter a city" aria-label="Search">
-                <button class="searcher__btn btn btn-outline-light mx-3 border-0" id="search-button">Search</button>
-                <a href="index.html">
-                    <button class="searcher__btn-back btn btn-outline-light px-3 d-none border-0" id="search-button">Back</button>
-                </a>
+                <button class="searcher__btn btn btn-outline-light ms-3 border-0" id="search-button">Search</button>
             </div>
         </nav>
         <!---->
@@ -46,12 +43,17 @@
 
 
     <!--Main-->
-    <main class="main-container container d-flex flex-column d-none">
+    <main class="main-container container d-flex flex-column d-none mt-3">
 
         <!--A. Location and date-->
-        <div class="location-and-date text-start container py-2 px-2">
-            <div class="location-and-date__location h1"></div>
-            <div class="location-and-date__date fw-bold"></div>
+        <div class="location-and-date text-start container py-2 px-2 d-flex justify-content-between">
+            <div class="location-and-date__info">
+                <div class="location-and-date__location h1"></div>
+                <div class="location-and-date__date fw-bold"></div>
+            </div>
+            <a href="index.html">
+                <button class="searcher__btn-back btn btn-outline-light px-3 d-none border-0" id="search-button">Back</button>
+            </a>
         </div>
         <!---->
 

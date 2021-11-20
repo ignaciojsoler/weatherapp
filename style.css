@@ -22,7 +22,11 @@ body {
 }
 
 .searcher {
+    width: 100%;
     flex: 0 1 auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .searcher__form-control {
